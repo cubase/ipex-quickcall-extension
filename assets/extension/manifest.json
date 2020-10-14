@@ -1,0 +1,30 @@
+{
+  "name": "IPEX QuickCall",
+  "version": "0.1",
+  "description": "IPEX Chrome extension integration",
+  "permissions": [
+    "tabs",
+    "storage",
+    "contextMenus",
+    "https://webcom.ipex.cz/*",
+    "https://webcom-beta.ipex.cz/*",
+    "https://comm-devel.voipex.io/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Ipex QuickCall",
+    "default_icon": {
+      "38": "ipex_icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "ipex_icon.png",
+    "48": "ipex_icon.png",
+    "128": "ipex_icon.png"
+  },
+  "manifest_version": 2
+}

@@ -1,6 +1,6 @@
 # **IPEX** QuickCall Chrome Extension
 
-Powered by:
+Powered by:  
 ![Powered by FA](https://user-images.githubusercontent.com/29258951/95994151-3841fd80-0e30-11eb-9c63-7dc4d0f731c8.png)
 
 ## About

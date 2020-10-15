@@ -1,7 +1,7 @@
 # **IPEX** QuickCall Chrome Extension
 
 Powered by:  
-![Powered by FA](https://user-images.githubusercontent.com/29258951/95994151-3841fd80-0e30-11eb-9c63-7dc4d0f731c8.png)
+![Powered by FA](https://user-images.githubusercontent.com/29258951/96114364-cd52fe00-0ee5-11eb-8244-95b3275a1c6a.png)
 
 ## About
 This extension implements "highlight-and-call" based feature into Chrome browser in cooperation with webcom.ipex.cz.

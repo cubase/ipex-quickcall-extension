@@ -50,6 +50,7 @@ const AppContainer = () => {
       <PrefixFormToggle isActive={prefixForm.isActive} onClick={handleTogglePrefixForm} />
       {prefixForm.isActive && (
         <PrefixForm
+          key={prefixForm.id}
           defaultValue={
             prefixForm.id
               ? models.prefixes.find((prefix) => prefix.id === prefixForm.id)

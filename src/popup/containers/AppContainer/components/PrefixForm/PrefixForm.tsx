@@ -1,19 +1,19 @@
 /* global HTMLFormElement */
 import React, { SyntheticEvent } from 'react'
 
-import { newPrefixFormStyles } from './styles'
+import { prefixFormStyles } from './styles'
 import { Prefix } from '../../../../../models/prefix.model'
 
-type NewPrefixForm = {
+type PrefixFormProps = {
   defaultValue?: Prefix
   onSubmit: (prefix: Prefix) => void
 }
 
-const NewPrefixForm = ({
+const PrefixForm = ({
   defaultValue = { id: '', name: '', prefix: '', isActive: false },
   onSubmit,
   ...props
-}: NewPrefixForm) => {
+}: PrefixFormProps) => {
   const isEditing = !!defaultValue.id
 
   const handleSubmit = (event: SyntheticEvent<HTMLFormElement>) => {
@@ -40,7 +40,7 @@ const NewPrefixForm = ({
   }
 
   return (
-    <form className={newPrefixFormStyles} onSubmit={handleSubmit} {...props}>
+    <form className={prefixFormStyles} onSubmit={handleSubmit} {...props}>
       <input
         autoComplete="false"
         defaultValue={defaultValue.name}
@@ -60,4 +60,4 @@ const NewPrefixForm = ({
   )
 }
 
-export default NewPrefixForm
+export default PrefixForm

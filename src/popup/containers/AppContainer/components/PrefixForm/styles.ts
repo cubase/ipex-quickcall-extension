@@ -2,7 +2,7 @@ import { css } from 'emotion'
 
 import { colors } from '../../../../core/theme'
 
-const newPrefixFormStyles = css`
+const prefixFormStyles = css`
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -29,4 +29,4 @@ const newPrefixFormStyles = css`
   }
 `
 
-export { newPrefixFormStyles }
+export { prefixFormStyles }

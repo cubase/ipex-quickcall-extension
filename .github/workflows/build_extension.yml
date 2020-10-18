@@ -31,7 +31,8 @@ jobs:
       with:
         args: zip -r ipex_quickcall.zip dist      
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/upload-artifact@v2
       with:
-        name: ipex_quickcall.zip
+        name: ipex_quickcall
+        path: ipex_quickcall.zip
       

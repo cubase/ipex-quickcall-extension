@@ -25,13 +25,12 @@ jobs:
 
     - run: npm install
     - run: npm run build
-
-    - name: Install zip
-      run: apt-get update && apt-get install -y zip
-      
+    
     - name: Create zip file
-      run: zip -r ipex_quickcall.zip dist
-      
+      uses: montudor/action-zip@v0.1.0
+      with:
+        args: zip -r ipex_quickcall.zip dist      
+
     - uses: actions/download-artifact@v2
       with:
         name: ipex_quickcall.zip

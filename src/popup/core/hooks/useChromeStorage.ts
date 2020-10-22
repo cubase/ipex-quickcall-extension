@@ -20,7 +20,7 @@ const useChromeStorage: UseChromeStorageHook = <T>(key: string, defaultValue: T)
     )
 
     return () => chrome.storage.onChanged.removeListener(handleStateChange)
-  }, [key])
+  }, [key, defaultValue])
 
   return [state, setIntoStorage]
 }
